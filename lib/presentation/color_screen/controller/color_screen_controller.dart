@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_boilerplate_may/presentation/color_screen/state/color_screen_state.dart';
 
 final colorScreenStateNotifierProvider =
-    StateNotifierProvider((ref) => ColorScreenStateNotifier());
+    StateNotifierProvider.autoDispose((ref) => ColorScreenStateNotifier());
 
 class ColorScreenStateNotifier extends StateNotifier<ColorScreenState> {
   ColorScreenStateNotifier()
